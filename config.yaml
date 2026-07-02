@@ -1,0 +1,17 @@
+sysname: medsyn
+artifact_root: /data1/liangzhilin
+
+paths:
+  datasets: datasets
+  results: results
+  eval: eval
+  logs: logs
+
+run:
+  dataset: placeholder
+  output_file: results/placeholder/medsyn.json
+  log_file: logs/placeholder/medsyn_v1_run.jsonl
+
+eval:
+  input_file: results/placeholder/medsyn.json
+  output_file: eval/placeholder/medsyn_metrics.json

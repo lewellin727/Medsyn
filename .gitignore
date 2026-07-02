@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Large artifacts should live outside the repository.
+datasets/*/
+!datasets/prep/
+results/*/
+eval/*/
+logs/*/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
