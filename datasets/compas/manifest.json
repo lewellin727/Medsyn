@@ -1,0 +1,26 @@
+{
+  "dataset": "compas",
+  "label_column": "y",
+  "n_columns": 14,
+  "n_rows": 5278,
+  "processed_file": "datasets/compas/processed/compas_cllm.csv",
+  "sample_sizes_total": [
+    20,
+    40,
+    100,
+    200
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "source": "OpenML dataset id 42192"
+}

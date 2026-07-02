@@ -3,18 +3,23 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.ipynb_checkpoints/
 
 # Local environments
 .venv/
 venv/
 env/
 
-# Large artifacts should live outside the repository.
-datasets/*/
-!datasets/prep/
-results/*/
-eval/*/
-logs/*/
+# This project intentionally tracks lightweight experiment data, logs, and
+# result folders during early development. Keep only files that are clearly
+# local, cache-like, or too large for normal GitHub pushes out of git.
+ref/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Model/checkpoint artifacts should use external storage or Git LFS.
 *.ckpt
 *.pt
 *.pth

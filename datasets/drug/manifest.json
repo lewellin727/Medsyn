@@ -1,0 +1,26 @@
+{
+  "dataset": "drug",
+  "label_column": "y",
+  "n_columns": 28,
+  "n_rows": 1876,
+  "processed_file": "datasets/drug/processed/drug_cllm.csv",
+  "sample_sizes_total": [
+    20,
+    40,
+    100,
+    200
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "source": "ref/CLLM-main/data"
+}
