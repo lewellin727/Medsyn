@@ -5,8 +5,10 @@ Research experiment repository for the `medsyn` system.
 ## Status
 
 Initialized as a research scaffold for CLLM-style low-data tabular data
-augmentation. The main Medsyn generation, curation, and evaluation pipeline is
-still under development.
+augmentation. The baseline suite and the first CLLM-style Medsyn
+generation/evaluation pipeline are now in place. The default config uses
+`generation.dry_run: true` so the file flow can be validated without calling an
+LLM service.
 
 ## Layout
 
@@ -31,17 +33,28 @@ still under development.
 ```bash
 conda activate cllm
 pip install -r requirements.txt
-python main.py --config config.yaml
+python main.py --config config.yaml --dry-run
 python eval.py --config config.yaml
 ```
 
-The default commands validate the scaffold and write placeholder JSON outputs.
-Replace the placeholder implementation in `src/medsyn/` as the method becomes
-defined.
+Run another prepared split:
+
+```bash
+python main.py --config config.yaml --dataset drug --data-seed 2 --size 40 --dry-run
+python eval.py --config config.yaml --dataset drug --data-seed 2 --size 40
+```
+
+To call an LLM-backed generator, set `generation.dry_run: false` or pass
+`--no-dry-run`, then configure `generation.serving`, `generation.model`, and
+`generation.api` in `config.yaml`.
 
 ## Data
 
 Dataset preparation details live in `datasets/README.md`.
+
+## Baselines
+
+Baseline method details and commands live in `baselines/README.md`.
 
 ## Artifact Storage
 

@@ -1,0 +1,2 @@
+{"baseline": "ctgan", "dataset": "adult", "device": "cuda:7", "epochs": 1, "event": "start", "split_name": "seed0_n20", "timestamp": 1782993398.5927427, "train_rows": 20}
+{"event": "complete", "loss_csv": "baselines/ctgan/artifacts/adult_seed0_n20/ctgan.loss.csv", "model_path": "baselines/ctgan/artifacts/adult_seed0_n20/ctgan.pt", "num_samples": 20, "result_csv": "results/adult/ctgan_seed0_n20.csv", "timestamp": 1782993406.6107879, "train_seconds": 7.4294421672821045}

@@ -1,17 +1,45 @@
 sysname: medsyn
 artifact_root: /data1/liangzhilin
 
+data:
+  dataset: adult
+  data_seed: 0
+  size: 20
+  split_name: seed0_n20
+
 paths:
-  datasets: datasets
-  results: results
-  eval: eval
-  logs: logs
+  train_csv: datasets/adult/splits/seed0_n20_train.csv
+  oracle_csv: datasets/adult/splits/seed0_n20_oracle.csv
+  test_csv: datasets/adult/splits/seed0_n20_test.csv
+  result_csv: results/adult/medsyn_seed0_n20.csv
+  run_json: results/adult/medsyn_seed0_n20.json
+  curation_json: results/adult/medsyn_seed0_n20_curation.json
+  log_file: logs/adult/medsyn_seed0_n20.jsonl
+  eval_json: eval/adult/medsyn_seed0_n20_metrics.json
 
 run:
-  dataset: placeholder
-  output_file: results/placeholder/medsyn.json
-  log_file: logs/placeholder/medsyn_v1_run.jsonl
+  seed: 0
+
+generation:
+  dry_run: true
+  serving: vllm
+  model: /data1/liangzhilin/model/Llama-3.2-1B-Instruct
+  n_samples: 20
+  temperature: 0.75
+  max_tokens: 8000
+  top_p: 0.95
+  n_processes: 4
+  max_rounds: 20
+  ic_samples: 20
+  api:
+    base_url: http://localhost:8000/v1
+    api_key: EMPTY
+
+curation:
+  enabled: false
+  n_estimators: 100
+  confidence_low: 0.2
+  confidence_high: 0.8
 
 eval:
-  input_file: results/placeholder/medsyn.json
-  output_file: eval/placeholder/medsyn_metrics.json
+  n_estimators: 20

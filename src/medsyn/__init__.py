@@ -1,1 +1,0 @@
-"""medsyn implementation package."""

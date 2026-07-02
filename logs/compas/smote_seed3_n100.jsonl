@@ -1,0 +1,2 @@
+{"baseline": "smote", "dataset": "compas", "event": "start", "split_name": "seed3_n100", "timestamp": 1782995806.8871472}
+{"event": "complete", "num_samples": 10, "result_csv": "results/compas/smote_seed3_n100.csv", "seconds": 0.05154132843017578, "timestamp": 1782995806.9386897}

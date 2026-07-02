@@ -1,0 +1,43 @@
+{
+  "cat_feature_names": [
+    "Age",
+    "Gender",
+    "Education",
+    "Country",
+    "Ethnicity",
+    "Alcohol",
+    "Amphet",
+    "Amyl",
+    "Benzos",
+    "Cannabis",
+    "Coke",
+    "Crack",
+    "Ecstasy",
+    "Heroin",
+    "Ketamine",
+    "Legalh",
+    "LSD",
+    "Meth",
+    "Mushrooms",
+    "VSA"
+  ],
+  "id": "medsyn_drug_seed2_n40",
+  "label_column": "y",
+  "n_cat_features": 20,
+  "n_classes": 2,
+  "n_num_features": 7,
+  "name": "medsyn_drug_seed2_n40",
+  "num_feature_names": [
+    "Nscore",
+    "Escore",
+    "Oscore",
+    "AScore",
+    "Cscore",
+    "Impulsive",
+    "SS"
+  ],
+  "task_type": "binclass",
+  "test_size": 918,
+  "train_size": 40,
+  "val_size": 918
+}

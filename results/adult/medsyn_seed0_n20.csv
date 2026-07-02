@@ -1,0 +1,6 @@
+age,fnlwgt,education-num,capital-gain,capital-loss,hours-per-week,marital-status,relationship,race,sex,country,employment_type,salary
+56,220187,10,0,0,45,0,2,0,1,1,1,0
+30,296453,13,1,0,40,0,2,0,1,1,1,0
+18,257980,9,0,0,40,1,3,0,1,1,1,1
+18,116528,10,0,0,30,1,3,0,1,1,1,1
+70,131699,13,0,0,55,1,0,0,0,1,2,1

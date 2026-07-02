@@ -15,7 +15,7 @@ outputs, logs, documentation, helper scripts, micro-benchmarks, and baselines.
 - `config.yaml`
 - `main.py`
 - `eval.py`
-- `src/medsyn/`
+- `src/`
 - `datasets/`
 - `results/`
 - `eval/`

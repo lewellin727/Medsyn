@@ -1,0 +1,2 @@
+{"baseline": "smote", "dataset": "adult", "event": "start", "split_name": "seed0_n20", "timestamp": 1782994406.3693497}
+{"event": "complete", "num_samples": 20, "result_csv": "results/adult/smote_seed0_n20.csv", "seconds": 0.026136159896850586, "timestamp": 1782994406.3954868}

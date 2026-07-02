@@ -1,0 +1,28 @@
+{
+  "cat_feature_names": [
+    "marital-status",
+    "relationship",
+    "race",
+    "sex",
+    "country",
+    "employment_type"
+  ],
+  "id": "medsyn_adult_seed0_n20",
+  "label_column": "salary",
+  "n_cat_features": 6,
+  "n_classes": 2,
+  "n_num_features": 6,
+  "name": "medsyn_adult_seed0_n20",
+  "num_feature_names": [
+    "age",
+    "fnlwgt",
+    "education-num",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "task_type": "binclass",
+  "test_size": 15071,
+  "train_size": 20,
+  "val_size": 15071
+}

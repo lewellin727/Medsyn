@@ -1,0 +1,55 @@
+baseline: tvae
+dataset: adult
+split_name: seed0_n20
+
+paths:
+  train_csv: datasets/adult/splits/seed0_n20_train.csv
+  ctgan_source_root: baselines/ctgan
+  result_csv: results/adult/tvae_seed0_n20.csv
+  model_path: baselines/tvae/artifacts/adult_seed0_n20/tvae.pt
+  log_file: logs/adult/tvae_seed0_n20.jsonl
+
+schema:
+  label_column: salary
+  task_type: binclass
+  n_classes: 2
+  numerical_columns:
+    - age
+    - fnlwgt
+    - education-num
+    - capital-gain
+    - capital-loss
+    - hours-per-week
+  categorical_columns:
+    - marital-status
+    - relationship
+    - race
+    - sex
+    - country
+    - employment_type
+  discrete_columns:
+    - marital-status
+    - relationship
+    - race
+    - sex
+    - country
+    - employment_type
+    - salary
+
+tvae:
+  seed: 0
+  device: cuda:0
+  epochs: 10
+  batch_size: 500
+  embedding_dim: 128
+  compress_dims:
+    - 128
+    - 128
+  decompress_dims:
+    - 128
+    - 128
+  l2scale: 0.00001
+  loss_factor: 2
+  verbose: true
+  sample:
+    num_samples: 1000
