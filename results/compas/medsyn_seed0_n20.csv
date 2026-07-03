@@ -1,0 +1,6 @@
+age,juv_fel_count,juv_misd_count,juv_other_count,priors_count,sex,age_cat_25-45,age_cat_Greaterthan45,age_cat_Lessthan25,race_African-American,race_Caucasian,c_charge_degree_F,c_charge_degree_M,y
+52,0,0,0,0,0,0,1,0,1,0,1,0,1
+42,0,0,0,0,0,1,0,0,0,1,1,0,0
+30,0,0,0,3,0,1,0,0,0,1,1,0,1
+26,0,0,0,5,1,1,0,0,0,1,0,1,0
+26,0,0,0,0,0,1,0,0,0,1,0,1,0

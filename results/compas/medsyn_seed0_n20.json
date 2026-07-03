@@ -1,0 +1,12 @@
+{
+  "dataset": "compas",
+  "dry_run": true,
+  "dry_run_note": "Wrote resampled training rows for pipeline validation; disable dry_run for LLM generation.",
+  "num_rows": 5,
+  "prompt_preview": "You are a synthetic data generator.\nYour goal is to produce data which mirrors the given examples in causal structure and feature and label distributions, while producing diverse new samples.\n\nLeverage your knowledge of criminal recidivism risk to generate realistic but diverse samples.\n\nExample data:\n[{\"age\": 52, \"juv_fel_count\": 0, \"juv_misd_count\": 0, \"juv_other_count\": 0, \"priors_count\": 0, \"sex\": 0, \"age_cat_25-45\": 0, \"age_cat_Greaterthan45\": 1, \"age_cat_Lessthan25\": 0, \"race_African-American\": 1, \"race_Caucasian\": 0, \"c_charge_degree_F\": 1, \"c_charge_degree_M\": 0, \"y\": 1}, {\"age\": 42, \"juv_fel_count\": 0, \"juv_misd_count\": 0, \"juv_other_count\": 0, \"priors_count\": 0, \"sex\": 0, \"age_cat_25-45\": 1, \"age_cat_Greaterthan45\": 0, \"age_cat_Lessthan25\": 0, \"race_African-American\": 0, \"race_Caucasian\": 1, \"c_charge_degree_F\": 1, \"c_charge_degree_M\": 0, \"y\": 0}, {\"age\": 30, \"juv_fel_count\": 0, \"juv_misd_count\": 0, \"juv_other_count\": 0, \"priors_count\": 3, \"sex\": 0, \"age_cat_25-45\": 1, \"age_c",
+  "result_csv": "results/compas/medsyn_seed0_n20.csv",
+  "run_json": "results/compas/medsyn_seed0_n20.json",
+  "seconds": 0.004874706268310547,
+  "split_name": "seed0_n20",
+  "sysname": "medsyn"
+}

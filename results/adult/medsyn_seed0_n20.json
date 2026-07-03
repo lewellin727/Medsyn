@@ -6,7 +6,7 @@
   "prompt_preview": "You are a synthetic data generator.\nYour goal is to produce data which mirrors the given examples in causal structure and feature and label distributions, while producing diverse new samples.\n\nLeverage your knowledge of salary above 50K based on demographic features to generate realistic but diverse samples.\n\nExample data:\n[{\"age\": 56, \"fnlwgt\": 220187, \"education-num\": 10, \"capital-gain\": 0, \"capital-loss\": 0, \"hours-per-week\": 45, \"marital-status\": 0, \"relationship\": 2, \"race\": 0, \"sex\": 1, \"country\": 1, \"employment_type\": 1, \"salary\": 0}, {\"age\": 30, \"fnlwgt\": 296453, \"education-num\": 13, \"capital-gain\": 1, \"capital-loss\": 0, \"hours-per-week\": 40, \"marital-status\": 0, \"relationship\": 2, \"race\": 0, \"sex\": 1, \"country\": 1, \"employment_type\": 1, \"salary\": 0}, {\"age\": 18, \"fnlwgt\": 257980, \"education-num\": 9, \"capital-gain\": 0, \"capital-loss\": 0, \"hours-per-week\": 40, \"marital-status\": 1, \"relationship\": 3, \"race\": 0, \"sex\": 1, \"country\": 1, \"employment_type\": 1, \"salary\": 1}, {\"age\": 1",
   "result_csv": "results/adult/medsyn_seed0_n20.csv",
   "run_json": "results/adult/medsyn_seed0_n20.json",
-  "seconds": 0.006299495697021484,
+  "seconds": 0.004444122314453125,
   "split_name": "seed0_n20",
   "sysname": "medsyn"
 }
